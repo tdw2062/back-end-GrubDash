@@ -6,11 +6,7 @@ WeLoveMovies app is an app for users to get information about their favorite mov
 
 Home Page
 
-![moviePic](/images/movies_get.jpg)
-
-![moviePic](/reviews_for_movies.png)
-
-![moviePic](reviews_for_movies.png)
+![moviePic](/images/reviews_for_movies.png)
 
 ## Technology
 
