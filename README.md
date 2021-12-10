@@ -1,14 +1,14 @@
-#WeLoveMovies App
+# WeLoveMovies App
 
 WeLoveMovies app is an app for users to get information about their favorite movies. The app represents a movies api. The user can make api calls on the back-end which delivers data via the movies database. Users can add movies, view theaters where their movie is playing, and peruse relevant reviews.
 
-##Screenshots
+## Screenshots
 
 Home Page
 
 ![moviePic](images/reviews_for_movies.jpg)
 
-##Technology
+## Technology
 
 Built with:
 -Node
@@ -17,13 +17,13 @@ Built with:
 -PostgreSQL database
 -Knex.js for query building
 
-##API Documentation
+## API Documentation
 
 All get requests return JSON response. All post requests require application /json body, and return JSON response.
 
-#Endpoints for data entries:
+# Endpoints for data entries:
 
-#/movies
+# /movies
 
 Get Movies: GET /movies
 -Successful get request will return an array of movie objects with the following fields:
@@ -43,7 +43,8 @@ Get Reviews of 1 Movie: GET movies/:movieId/reviews
 Get Theaters of 1 Movie: GET movies/:movieId/theaters
 -Successful get request will return the theater listings of a specific movie (see /theater for description of theater object)
 
-#/reviews
+# /reviews
+
 Get Reviews: GET /reviews
 -Successful get request will return an array of review objects with the following fields:
 -review_id: integer
@@ -57,7 +58,7 @@ Get 1 Review: Get reviews/:reviewId
 -Successful put request will update a review with matching review_id
 -Successful delete request will delete the review with the given review_id
 
-#/theaters
+# /theaters
 
 Get Theaters: GET /theaters
 -Successful get request will return an array of theater objects with the following fields:
