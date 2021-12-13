@@ -6,8 +6,6 @@ WeLoveMovies app is an app for users to get information about their favorite mov
 
 Home Page
 
-![moviePic](/images/reviews_for_movies.png)
-
 ## Technology
 
 Built with:
@@ -34,14 +32,20 @@ Get Movies: GET /movies
 -description: text
 -image_url: string
 
+![moviePic](/images/movies_get.png)
+
 Get 1 Movie: GET movies/:movieId
 -Successful get request will return one specific movie with matching movie_id
 
 Get Reviews of 1 Movie: GET movies/:movieId/reviews
 -Successful get request will return the reviews of a specific movie (see /review for description of review object)
 
+![moviePic](/images/reviews_for_movies.png)
+
 Get Theaters of 1 Movie: GET movies/:movieId/theaters
 -Successful get request will return the theater listings of a specific movie (see /theater for description of theater object)
+
+![moviePic](/images/theaters_for_movies.png)
 
 # /reviews
 
@@ -53,10 +57,25 @@ Get Reviews: GET /reviews
 -critic_id: integer
 -movie_id: integer
 
-Get 1 Review: Get reviews/:reviewId
+Get 1 Review: GET reviews/:reviewId
 -Successful get request will return one specific reveiw with matching review_id
 -Successful put request will update a review with matching review_id
 -Successful delete request will delete the review with the given review_id
+
+![moviePic](/images/reviews_for_movies.png)
+
+Update Review: PUT reviews/:reviewId
+
+- Successful put request will modify one specific review with matching review_id
+
+![moviePic](/images/put_forReviews.png)
+
+Delete Review: DELETE reviews/:reviewId
+
+- Successful delete request will delete one specific review with mtaching review_id
+- Entering an incorrect movie_id will return an error
+
+![moviePic](/images/delete_validation.png)
 
 # /theaters
 
@@ -68,3 +87,5 @@ Get Theaters: GET /theaters
 -city: string
 -state: string
 -zip: string
+
+![moviePic](/images/theaters_get.png)
