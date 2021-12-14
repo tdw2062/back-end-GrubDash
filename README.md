@@ -2,10 +2,6 @@
 
 WeLoveMovies app is an app for users to get information about their favorite movies. The app represents a movies api. The user can make api calls on the back-end which delivers data via the movies database. Users can add movies, view theaters where their movie is playing, and peruse relevant reviews.
 
-## Screenshots
-
-Home Page
-
 ## Technology
 
 Built with:
@@ -25,7 +21,7 @@ All get requests return JSON response. All post requests require application /js
 
 # /movies
 
-Get Movies: GET /movies
+**Get Movies: GET /movies**
 
 - Successful get request will return an array of movie objects with the following fields:
 - movie_id: integer
@@ -37,17 +33,17 @@ Get Movies: GET /movies
 
 ![moviePic](/images/movies_get.png)
 
-Get 1 Movie: GET movies/:movieId
+**Get 1 Movie: GET movies/:movieId**
 
 - Successful get request will return one specific movie with matching movie_id
 
-Get Reviews of 1 Movie: GET movies/:movieId/reviews
+**Get Reviews of 1 Movie: GET movies/:movieId/reviews**
 
 - Successful get request will return the reviews of a specific movie (see /review for description of review object)
 
 ![moviePic](/images/reviews_for_movies.png)
 
-Get Theaters of 1 Movie: GET movies/:movieId/theaters
+**Get Theaters of 1 Movie: GET movies/:movieId/theaters**
 
 - Successful get request will return the theater listings of a specific movie (see /theater for description of theater object)
 
@@ -55,7 +51,7 @@ Get Theaters of 1 Movie: GET movies/:movieId/theaters
 
 # /reviews
 
-Get Reviews: GET /reviews
+**Get Reviews: GET /reviews**
 
 - Successful get request will return an array of review objects with the following fields:
 - review_id: integer
@@ -64,7 +60,7 @@ Get Reviews: GET /reviews
 - critic_id: integer
 - movie_id: integer
 
-Get 1 Review: GET reviews/:reviewId
+**Get 1 Review: GET reviews/:reviewId**
 
 - Successful get request will return one specific reveiw with matching review_id
 - Successful put request will update a review with matching review_id
@@ -72,13 +68,13 @@ Get 1 Review: GET reviews/:reviewId
 
 ![moviePic](/images/reviews_for_movies.png)
 
-Update Review: PUT reviews/:reviewId
+**Update Review: PUT reviews/:reviewId**
 
 - Successful put request will modify one specific review with matching review_id
 
 ![moviePic](/images/put_forReviews.png)
 
-Delete Review: DELETE reviews/:reviewId
+**Delete Review: DELETE reviews/:reviewId**
 
 - Successful delete request will delete one specific review with mtaching review_id
 - Entering an incorrect movie_id will return an error
@@ -87,7 +83,7 @@ Delete Review: DELETE reviews/:reviewId
 
 # /theaters
 
-Get Theaters: GET /theaters
+**Get Theaters: GET /theaters**
 
 - Successful get request will return an array of theater objects with the following fields:
 - theater_id: integer - name: string
